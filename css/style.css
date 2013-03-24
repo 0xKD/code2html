@@ -1,0 +1,29 @@
+body {
+	min-width: 357px;
+	overflow-x: hidden;
+	}
+
+img {
+	margin: 5px;
+	border: 2px solid black;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+	}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	}
+
+.code_container {
+	/*overflow: auto;*/
+	}
+
+.options {
+	padding-bottom:0.5em;
+}
+
+/*.output_code {
+		border-radius: 25px;
+	}*/
