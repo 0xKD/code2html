@@ -1,5 +1,3 @@
-var $lang = ['python','ruby','html','javascript'];
-
 $(function(){
 		// $('#lang-dropdown').dropdown()
 		$('button').on('click',function(){
