@@ -5,7 +5,8 @@ $(function(){
 		$('button').on('click',function(){
 			// console.log('sup')
 			var code = $('div.code_container').children('textarea').val();
-			var lang = $('select#lang-dropdown').find(':selected').text().toLowerCase();
+			// var lang = $('select#lang-dropdown').find(':selected').text().toLowerCase();
+			var lang = $('select#lang-dropdown').find(':selected').value();
 			// console.log(lang);
 			// console.log(code);
 			// $(code).val('AH!');
