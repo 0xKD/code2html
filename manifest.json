@@ -6,6 +6,7 @@
   "version": "1.0",
 
   "permissions": [
+    "storage",
     "http://pygments.appspot.com/",
     "http://hilite.me/api"
   ],
