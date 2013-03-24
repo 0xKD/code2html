@@ -2,26 +2,29 @@ $(function(){
 		// $('#lang-dropdown').dropdown()
 		$('button').on('click',function(){
 			// console.log('sup')
+
+			// console.log($('select#lang-dropdown').find(':selected').val());
 			var code = $('div.code_container').children('textarea').val();
 			// var lang = $('select#lang-dropdown').find(':selected').text().toLowerCase();
-			var lang = $('select#lang-dropdown').find(':selected').value();
+			var lang = $('select#lang-dropdown').find(':selected').val();
+			var style = $('select#style-dropdown').find(':selected').val();
 			// console.log(lang);
 			// console.log(code);
 			// $(code).val('AH!');
-			pygments.getCode(code,lang);
+			pygments.getCode(code,lang,style);
 			// pygments.editCSS();
 		});
 });
 
 var pygments = {
-	getCode: function(xcode,xlang){
+	getCode: function(xcode,xlang,xstyle){
 		// console.log('works!'+code);
 
 		// Some AJAX
 		$.ajax({
 			type:"POST",
 			url:"http://hilite.me/api",
-			data:{code:xcode,lexer:xlang}
+			data:{code:xcode,lexer:xlang,style:xstyle}
 		}).done(function(html){
 			$('div.code_container').children('textarea').val(html);
 			// $('div.code_container').insertAfter(html);
