@@ -1,18 +1,18 @@
 {
-  "manifest_version": 2,
+	"manifest_version": 2,
 
-  "name": "Code2HTML",
-  "description": "Syntax highlight your code to pure HTML.",
-  "version": "1.0",
+	"name": "Code2HTML",
+	"description": "Syntax highlight your code to pure HTML.",
+	"version": "1.0",
 
-  "permissions": [
-    "storage",
-    "http://pygments.appspot.com/",
-    "http://hilite.me/api"
-  ],
+	"permissions": [
+		"storage",
+		//"http://pygments.appspot.com/",
+		"http://hilite.me/api"
+	],
 
-  "browser_action": {
-    //"default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+	"browser_action": {
+		//"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	}
 }
