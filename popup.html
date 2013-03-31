@@ -7,10 +7,15 @@
 		<script src="js/popup.js" type="text/javascript"></script>
 	</head>
 	<body>
+		<textarea id="sandbox"></textarea>
 		<div class="code_container">
-			<textarea></textarea><br/>
+			<div class="options-top">
+				<button type="button" id="clip">Copy & Clear</button>
+				<button type="button" id="clear">Clear</button>
+			</div>
+			<textarea id="code_area"></textarea><br/>
 			<div class="options">
-				<button type="button" value="Submit">Highlight</button>
+				<button type="button" id="hl" value="Submit">Highlight</button>
 				<select id="lang-dropdown" style="max-width:50%">
 					<option value="abap">ABAP</option>
 					<option value="as">ActionScript</option>

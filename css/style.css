@@ -23,11 +23,22 @@ textarea {
 	}
 
 .options {
-	padding-bottom:0.5em;
+	padding-bottom: 0.5em;
+}
+
+.options-top {
+	padding-bottom: 0.3em;
 }
 
 form.misc-options {
 	font-size: 0.8em;
+}
+
+textarea#sandbox {
+	height: 0.5px;
+	width: 0.5px;
+	/*visibility: hidden;*/
+	display: none;
 }
 /*.output_code {
 		border-radius: 25px;
