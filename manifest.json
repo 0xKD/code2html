@@ -9,10 +9,10 @@
 	"version": "1.0",
 
 	"icons": {
-        "16": "img/html16.png",
-        "48": "img/html48.png",
-        "128": "img/html128.png"
-    },
+		"16": "img/html16.png",
+		"48": "img/html48.png",
+		"128": "img/html128.png"
+	},
 
 	"permissions": [
 		"storage",
