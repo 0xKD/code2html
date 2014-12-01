@@ -1,45 +1,48 @@
 body {
-	min-width: 357px;
-	overflow-x: hidden;
-	font-family: sans-serif;
-	}
-
-img {
-	margin: 5px;
-	border: 2px solid black;
-	vertical-align: middle;
-	width: 75px;
-	height: 75px;
-	}
+  min-width: 25em;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  font-size: 1em;
+}
 
 textarea {
-	min-width: 250px;
-	width: 100%;
-	height: 200px;
-	}
+  width: 99%;
+  height: 15em;
+}
 
 .code_container {
-	/*overflow: auto;*/
-	}
+  /*overflow: auto;*/
+}
 
 .options {
-	padding-bottom: 0.5em;
+  display: inline-block;
+  margin-top: .5em;
+  padding-bottom: 0.5em;
+}
+
+.options > select {
+  margin-left: .25em;
 }
 
 .options-top {
-	padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
+}
+
+.options-top > button:first-of-type {
+  margin-right: .25em;
 }
 
 form.misc-options {
-	font-size: 0.8em;
+  margin-top: .5em;
+  font-size: 0.8em;
 }
 
 textarea#sandbox {
-	height: 0.5px;
-	width: 0.5px;
-	/*visibility: hidden;*/
-	display: none;
+  display: none;
 }
-/*.output_code {
-		border-radius: 25px;
-	}*/
+
+label.cbl input[type=checkbox]{
+  position: relative;
+  vertical-align: middle;
+}
+
