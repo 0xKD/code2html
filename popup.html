@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Code2HTML</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery.js" type="text/javascript"></script>
@@ -10,10 +11,10 @@
     <textarea id="sandbox"></textarea>
     <div class="code_container">
       <div class="options-top">
-        <button type="button" id="clip">Copy &amp; Clear</button>
+        <button type="button" id="clip">Cut</button>
         <button type="button" id="clear">Clear</button>
       </div>
-      <textarea id="code_area"></textarea><br/>
+      <textarea id="code_area"></textarea><br>
       <div class="options">
         <button type="button" id="hglt" value="Submit">Highlight</button>
         <select id="lang-dropdown" style="max-width:50%">
@@ -275,8 +276,8 @@
           <option value="native">Native</option>
         </select>
         <form class="misc-options">
-          Rounded corners:<input id="rounded-corners" type="checkbox">
-          Border:<input id="borders" type="checkbox">
+          <label class="cbl" for="rounded-corners">Rounded corners:<input id="rounded-corners" type="checkbox"></label>
+          <label class="cbl" for="borders">Border:<input id="borders" type="checkbox"></label>
         </form>
       </div>
     </div>
