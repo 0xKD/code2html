@@ -1,12 +1,12 @@
 body {
-  min-width: 25em;
+  padding: 1em;
+  min-width: 30em;
   overflow-x: hidden;
-  font-family: sans-serif;
-  font-size: 1em;
 }
 
 textarea {
-  font-family: monospace;
+  font-family: monospace !important;
+  font-size: 1.2em !important;
   width: 99%;
   height: 15em;
 }
@@ -34,8 +34,9 @@ textarea {
 }
 
 form.misc-options {
+  display: inline-flex;
   margin-top: .5em;
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
 }
 
 textarea#sandbox {
@@ -43,6 +44,7 @@ textarea#sandbox {
 }
 
 label.cbl input[type=checkbox]{
+  margin-right: .5em;
   position: relative;
   vertical-align: middle;
 }
